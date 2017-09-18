@@ -5,7 +5,7 @@
 ?>
 
 <div class="currencyTable" data-info="<?php echo htmlspecialchars($data); ?>">
-	<h3>TopView Currency Table</h3>
+	<h3>Currency Table</h3>
 
 	<!-- option values for select menu could be created dynamically based on data in production project -->
 	<div class="currencyTable-sorter">
