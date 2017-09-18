@@ -2,8 +2,9 @@ var gulp = require('gulp');
 var watch = require('gulp-watch');
 var sass = require('gulp-sass');
 
-var source = 'app/app.scss';
-var dest = 'app/';
+var sourceDir = 'assets/scss/**/*.scss';
+var source = 'assets/scss/styles.scss';
+var dest = './assets/css/';
 
 
 gulp.task('styles', function() {
@@ -13,5 +14,6 @@ gulp.task('styles', function() {
 });
 
 gulp.task('default', function() {
-	gulp.watch(source, ['styles']);
+	gulp.watch(sourceDir, ['styles']);
 });
+

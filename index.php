@@ -9,8 +9,7 @@ $data = $data;
 
 <?php require_once('inc/header.php'); ?>
 
-<h3>TopView Data Table</h3>
-<div class="data" data-info="<?php echo $data; ?>"></div>
+<?php require_once('inc/table.php'); ?>
 
-<?php require_once('inc/footer.php');
+<?php require_once('inc/footer.php'); 
 

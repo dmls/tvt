@@ -1,0 +1,81 @@
+/**
+ * Table styles
+ */
+
+$mobileTableWidth: 800px;
+
+.currencyTable {
+	h3 {
+		padding: 0 pxToEm(20);	
+	}
+
+	.mobileLabel {
+		display: none;
+	}
+}
+
+.currencyTable-sorter {
+	padding: 0 pxToEm(20);
+	margin: pxToEm(20) 0;
+}
+
+table {
+	width: 100%;
+}
+
+thead { 
+	background-color: $darkgray;
+	font-weight: bold;
+	color: $white;
+
+	tr td {
+		padding: pxToEm(20);
+		text-transform: capitalize;
+	}
+}
+
+tr {
+	&:nth-child(2n) {
+		background: $lightgray;	
+	}
+}
+
+td {
+	padding: pxToEm(10) pxToEm(20);
+}
+
+@media (max-width: $mobileTableWidth) {
+.currencyTable {
+	.mobileLabel {
+		display: inline-block;
+		width: pxToEm(100);
+		text-transform: capitalize;
+		font-weight: bold;	
+	}
+
+	thead {
+		display: none;	
+	}
+}
+
+tr {
+	&:first-child {
+		td:first-child {
+			border-top: pxToEm(2) solid $darkgray;
+		}	
+	}
+}
+
+td {
+	display: block;
+	
+	&:first-child {
+		padding-top: pxToEm(30);	
+	}
+
+	&:last-child {
+		padding-bottom: pxToEm(30);	
+	}
+}
+}
+
